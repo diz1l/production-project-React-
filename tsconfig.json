@@ -5,6 +5,8 @@
         "module": "ESNext",
         "target": "es5",
         "jsx": "react",
+        // Enable the following to allow importing modules using absolute paths.
+        "baseUrl": ".",
         "allowJs": false,
         "moduleResolution": "node",
         "types": ["node", "jest", "react"],
