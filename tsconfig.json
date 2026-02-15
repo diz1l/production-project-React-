@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "noImplicitAny": true,
+        "module": "ESNext",
+        "target": "es5",
+        "jsx": "react",
+        "allowJs": false,
+        "moduleResolution": "node",
+        "types": ["node", "jest", "react"],
+        // Enable the following options to allow default imports from modules with no default export.
+        "esModuleInterop": true,
+        // Allow synthetic default imports from modules with no default export. This does not affect code emit, just typechecking.
+        "allowSyntheticDefaultImports": true
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS"
+        }
+    }
+}
