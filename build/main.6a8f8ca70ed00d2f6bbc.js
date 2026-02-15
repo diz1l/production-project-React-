@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("This is a test function."),"The argument is: ".concat(23),document.body.innerHTML="<h1>Hello World</h1>"})();
