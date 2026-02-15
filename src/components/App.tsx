@@ -1,6 +1,6 @@
-import "../styles/App.scss";
+import "../index.scss";
 
-import Counter from "./Counter";
+import Counter from "./CounterTS.tsx/Counter";
 
 export default function App() {
   return (
