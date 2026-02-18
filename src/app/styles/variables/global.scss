@@ -11,6 +11,19 @@
 
     --color-text-light: #ffffff;
     --color-text-dark: #1a1a1a;
+
+  --bg-color: #f3f4f6;
+  --inverted-bg-color: #ffffff;
+
+  --primary-color: #0f1724;
+  --secondary-color: #0449e0;
+
+  --text-color: #1a1a1a;
+  --inverted-text-color: #f3f4f6;
+
+  --theme-trans: 220ms ease;
+  /* spinner track used for loading indicators */
+  --spinner-track: rgba(0,0,0,0.08);
 }
 
 

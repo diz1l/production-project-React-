@@ -1,0 +1,30 @@
+
+.navbar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100vh;
+	width: 220px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 20px;
+	background: var(--inverted-bg-color);
+	box-shadow: 2px 0 8px rgba(0,0,0,0.12);
+	align-items: flex-start;
+	overflow-y: auto;
+	z-index: 1000;
+	transition: background-color var(--theme-trans), color var(--theme-trans), box-shadow var(--theme-trans);
+}
+
+.themeBtn {
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.08);
+	color: var(--text-color);
+	padding: 8px 12px;
+	border-radius: 6px;
+	cursor: pointer;
+	margin-bottom: 8px;
+	transition: background-color var(--theme-trans), color var(--theme-trans), border-color var(--theme-trans);
+}
+

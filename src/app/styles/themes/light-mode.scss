@@ -1,8 +1,13 @@
 .app.light-mode {
-    --bg-color: #e8e8ea;
-    --primary-color: #041c65;
+    --bg-color: #f3f4f6;
+    --inverted-bg-color: #ffffff;
+
+    --primary-color: #0f1724;
     --secondary-color: #0449e0;
-    --text-color: #1a1a1a;
+
+    --text-color: #111827;
+    --inverted-text-color: #f3f4f6;
+    --spinner-track: rgba(0,0,0,0.08);
 }
 
 body.light-mode {

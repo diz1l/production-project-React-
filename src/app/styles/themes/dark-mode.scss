@@ -1,8 +1,14 @@
 .app.dark-mode {
-    --bg-color: #090949;
-    --primary-color: #049604;
-    --secondary-color: #04ff04;
-    --text-color: #ffffff;
+    --bg-color: #0b1220;
+    --inverted-bg-color: #0f1724;
+
+    --primary-color: #22c55e; 
+    --secondary-color: #10b981;
+
+    --text-color: #e6f3ea;
+    --inverted-text-color: #0b1220;
+    /* spinner track for dark theme */
+    --spinner-track: rgba(255,255,255,0.06);
 }
 
 body.dark-mode {
