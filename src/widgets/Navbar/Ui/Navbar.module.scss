@@ -17,14 +17,4 @@
 	transition: background-color var(--theme-trans), color var(--theme-trans), box-shadow var(--theme-trans);
 }
 
-.themeBtn {
-	background: transparent;
-	border: 1px solid rgba(255,255,255,0.08);
-	color: var(--text-color);
-	padding: 8px 12px;
-	border-radius: 6px;
-	cursor: pointer;
-	margin-bottom: 8px;
-	transition: background-color var(--theme-trans), color var(--theme-trans), border-color var(--theme-trans);
-}
 

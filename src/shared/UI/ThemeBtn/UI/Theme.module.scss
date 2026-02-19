@@ -1,0 +1,28 @@
+.themeBtn {
+  position: relative;
+  color: transparent !important;
+}
+
+:global(.app.light-mode) .themeBtn::before {
+  content: "☀";
+}
+
+:global(.app.dark-mode) .themeBtn::before {
+  content: "🌙";
+}
+
+.themeBtn::before {
+  content: "";
+  position: absolute;
+//   left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--inverted-text-color) !important;
+}

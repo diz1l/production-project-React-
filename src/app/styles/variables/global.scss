@@ -12,17 +12,17 @@
     --color-text-light: #ffffff;
     --color-text-dark: #1a1a1a;
 
-  --bg-color: #f3f4f6;
-  --inverted-bg-color: #ffffff;
+      --bg-color: #ffffff; 
+      --inverted-bg-color: #0f1724; 
 
-  --primary-color: #0f1724;
-  --secondary-color: #0449e0;
+      --primary-color: #0A66C2; 
+      --primary-contrast: #ffffff;
+      --secondary-color: #0073b1; 
 
-  --text-color: #1a1a1a;
-  --inverted-text-color: #f3f4f6;
+      --text-color: #0f1724; 
+      --inverted-text-color: #ffffff;
 
-  --theme-trans: 220ms ease;
-  /* spinner track used for loading indicators */
+      --theme-trans: 200ms cubic-bezier(.2,.8,.2,1);
   --spinner-track: rgba(0,0,0,0.08);
 }
 
