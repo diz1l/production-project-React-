@@ -13,7 +13,10 @@ export function ThemeBtn({ className }: ThemeBtnProps) {
 
     return (
         <ButtonEl
-            className={classNames(classes.themeBtn, {}, [className])}
+            className={classNames(classes['theme-btn'], {}, [
+                className,
+                theme === Theme.LIGHT ? classes.light : classes.dark,
+            ])}
             onClick={toggleTheme}
         >
             {theme === Theme.LIGHT ? 'Dark' : 'Light'}

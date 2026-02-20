@@ -1,14 +1,14 @@
 .app.light-mode {
-    --bg-color: #f3f6f8;
-    --inverted-bg-color: #ffffff;
-    --primary-color: #0A66C2;
-    --secondary-color: #0073b1;
-    --text-color: #0f1724;
-    --inverted-text-color: #ffffff;
-    --spinner-track: rgba(0,0,0,0.06);
+  --bg-color: #f3f6f8;
+  --inverted-bg-color: #fff;
+  --primary-color: #0a66c2;
+  --secondary-color: #0073b1;
+  --text-color: #0f1724;
+  --inverted-text-color: #fff;
+  --spinner-track: rgb(0 0 0 / 6%);
 }
 
 body.light-mode {
-    background: var(--bg-color);
-    color: var(--text-color);
+  background: var(--bg-color);
+  color: var(--text-color);
 }

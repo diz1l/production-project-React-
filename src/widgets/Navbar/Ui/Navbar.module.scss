@@ -1,45 +1,42 @@
-
 .navbar {
-	position: fixed;
-	left: 0;
-	top: 0;
-	right: 0;
-	height: 64px;
-	display: flex;
-	align-items: center;
-	gap: 20px;
-	padding: 0 28px;
-	background: var(--inverted-bg-color);
-	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-	z-index: 1000;
-	transition: background-color var(--theme-trans), color var(--theme-trans), box-shadow var(--theme-trans);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 28px;
+  background: var(--inverted-bg-color);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+  z-index: 1000;
+  transition: background-color var(--theme-trans), color var(--theme-trans), box-shadow var(--theme-trans);
 }
 
 .logo {
-	width: 44px;
-	height: 44px;
-	border-radius: 8px;
-	background: var(--primary-color);
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	color: var(--primary-contrast);
-	font-weight: 700;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: var(--primary-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-contrast);
+  font-weight: 700;
 }
 
-.navItems {
-	display: flex;
-	gap: 12px;
-	margin-left: auto;
-	align-items: center;
+.nav-items {
+  display: flex;
+  gap: 12px;
+  margin-left: auto;
+  align-items: center;
 }
 
-.navItem {
-	padding: 8px 14px;
-	border-radius: 8px;
-	transition: background-color var(--theme-trans), color var(--theme-trans), transform 120ms ease;
+.nav-item {
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: background-color var(--theme-trans), color var(--theme-trans), transform 120ms ease;
 }
 
-/* spacer removed; layout handled by margin-left:auto on .navItems */
-
-
+/* spacer removed; layout handled by margin-left:auto on .nav-items */

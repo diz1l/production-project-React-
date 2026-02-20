@@ -23,16 +23,16 @@ export const Navbar: FC<NavbarProps> = ({ className }) => {
                 </div>
             </Link>
 
-            <nav className={classes.navItems} aria-label="Main navigation">
+            <nav className={classes['nav-items']} aria-label="Main navigation">
                 <AppLink
-                    className={classes.navItem}
+                    className={classes['nav-item']}
                     theme={AppLinkTheme.SECONDARY}
                     to="/about"
                 >
                     {t('about')}
                 </AppLink>
                 <AppLink
-                    className={classes.navItem}
+                    className={classes['nav-item']}
                     theme={AppLinkTheme.PRIMARY}
                     to="/"
                 >

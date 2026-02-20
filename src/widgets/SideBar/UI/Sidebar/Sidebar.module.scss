@@ -4,7 +4,7 @@
   width: 72px;
   background: var(--inverted-bg-color);
   color: var(--inverted-text-color);
-  box-shadow: 2px 0 8px rgba(0,0,0,0.08);
+  box-shadow: 2px 0 8px rgb(0 0 0 / 8%);
   overflow: hidden;
   transition: width var(--theme-trans), background-color var(--theme-trans), color var(--theme-trans);
 }
@@ -67,5 +67,3 @@
   transform: translateX(-6px);
   pointer-events: none;
 }
-
-

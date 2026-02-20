@@ -23,7 +23,7 @@ blockquote::before,
 blockquote::after,
 q::before,
 q::after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -132,12 +132,10 @@ dialog {
 
 progress {
   appearance: none;
-  -webkit-appearance: none;
 }
 
 meter {
   appearance: none;
-  -webkit-appearance: none;
 }
 
 mark {
@@ -183,10 +181,6 @@ slot {
   display: contents;
 }
 
-portal {
-  display: block;
-}
-
 :focus {
   outline: none;
 }
@@ -203,16 +197,10 @@ body {
 
 html {
   font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 ::selection {
-  background: transparent;
-  color: inherit;
-}
-
-::-moz-selection {
   background: transparent;
   color: inherit;
 }
