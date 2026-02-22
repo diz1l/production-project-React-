@@ -1,0 +1,33 @@
+.Loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  gap: 12px;
+  color: var(--text-color);
+  transition: color var(--theme-trans), opacity var(--theme-trans);
+  opacity: 0;
+  animation: fade-in 200ms ease forwards;
+  padding: 24px;
+  text-align: center;
+}
+
+.loader {
+  content: "";
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 6px solid var(--spinner-track);
+  border-top-color: var(--primary-color);
+  animation: spin 900ms linear infinite;
+  box-shadow: 0 6px 18px rgb(0 0 0 / 8%);
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fade-in {
+  to { opacity: 1; }
+}
