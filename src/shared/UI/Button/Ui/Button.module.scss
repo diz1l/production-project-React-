@@ -1,86 +1,18 @@
 .button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 8px;
-  border-radius: 10px;
-  background: var(--inverted-bg-color);
-  color: var(--text-color);
-  border: 1px solid var(--inverted-text-color);
-  box-shadow: 0 2px 8px rgb(2 6 23 / 4%);
   cursor: pointer;
-  user-select: none;
-  transition:
-    background-color var(--theme-trans),
-    color var(--theme-trans),
-    border-color var(--theme-trans),
-    box-shadow var(--theme-trans),
-    transform 120ms ease;
-  font-weight: 600;
-}
-
-.button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgb(2 6 23 / 6%);
-}
-
-.button:active {
-  transform: translateY(0);
-}
-
-.button:focus {
-  outline: none;
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 6px rgb(16 73 224 / 6%);
-}
-
-.primary {
-  background: var(--primary-color);
-  color: var(--inverted-text-color);
-  border-color: transparent;
-  box-shadow: 0 8px 20px rgb(2 6 23 / 8%);
-}
-
-.primary:hover {
-  filter: brightness(0.96);
-}
-
-.ghost {
-  background: transparent;
-  color: var(--text-color);
-  border: 1px solid rgb(0 0 0 / 6%);
-}
-
-@media (max-width: 480px) {
-  .button {
-    padding: 8px 12px;
-    border-radius: 8px;
-    font-size: 14px;
-  }
+  color: var(--primary-color);
 }
 
 .clear {
-  background: transparent;
-  color: var(--text-color);
-  border-color: transparent;
-  box-shadow: none;
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
 }
 
-.secondary {
-  background: transparent;
-  color: var(--secondary-color);
-  border: 1px solid rgb(0 0 0 / 6%);
-}
-
-.success {
-  background: #22c55e;
-  color: var(--inverted-text-color);
-  border-color: transparent;
-}
-
-.error {
-  background: #ef4444;
-  color: var(--inverted-text-color);
-  border-color: transparent;
+.outline {
+  padding: 10px 15px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  background: none;
 }

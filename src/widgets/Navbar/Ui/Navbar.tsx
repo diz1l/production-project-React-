@@ -2,13 +2,12 @@ import { useTranslation } from 'react-i18next';
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
 import { classNames } from 'shared/lib';
-import classes from './Navbar.module.scss';
 import { AppLink } from 'shared/UI';
 import { AppLinkTheme } from 'shared/UI/AppLink/UI/AppLink';
 import { LangSwich } from 'widgets/LangSwich';
 import logoOfWeb from 'shared/img/logoOfWeb.png';
 import { ThemeSwitcher } from 'widgets/ThemeBtn';
-
+import classes from './Navbar.module.scss';
 
 interface NavbarProps {
   className?: string;

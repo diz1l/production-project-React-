@@ -1,4 +1,4 @@
-import renderWithTranslation from "./renderWithTranslation/renderWithTranslation";
+import renderWithTranslation from './renderWithTranslation/renderWithTranslation';
 
 export {
     renderWithTranslation,

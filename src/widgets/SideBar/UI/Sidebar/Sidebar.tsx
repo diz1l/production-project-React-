@@ -1,15 +1,15 @@
 import { FC, useState } from 'react';
 import { classNames } from 'shared/lib';
-import classes from './Sidebar.module.scss';
 import { ButtonEl } from 'shared/UI';
 import { ButtonTheme } from 'shared/UI/Button/Ui/ButtonEl';
+import classes from './Sidebar.module.scss';
 
 interface SidebarProps {
   className?: string;
 }
 
 export const Sidebar: FC<SidebarProps> = (props) => {
-    const { className, children } = props;
+    const { className } = props;
     const [collapsed, setCollapsed] = useState(false);
 
     const toggleSidebar = () => {

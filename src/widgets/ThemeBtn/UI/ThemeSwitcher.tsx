@@ -1,9 +1,7 @@
 import { classNames } from 'shared/lib';
-import classes from './Theme.module.scss';
-import { useTheme } from 'app/providers/ThemeProvider';
-import { ButtonEl } from '../../../shared/UI/Button';
+import { useTheme, Theme } from 'app/providers/ThemeProvider';
 import { ButtonTheme } from 'shared/UI/Button/Ui/ButtonEl';
-import { Theme } from 'app/providers/ThemeProvider/lib/ThemeContext';
+import { ButtonEl } from 'shared/UI/Button';
 
 interface ThemeBtnProps {
   className?: string;

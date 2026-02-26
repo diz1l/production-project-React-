@@ -16,11 +16,13 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
         this.state = { hasError: false };
     }
 
-    static getDerivedStateFromError(error: Error) {
+    static getDerivedStateFromError(_error: Error) {
         return { hasError: true };
     }
+
     componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    console.log(error, errorInfo);
+        // eslint-disable-next-line no-console
+        console.log(error, errorInfo);
     }
 
     render() {
@@ -28,7 +30,7 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
         const { children } = this.props;
         if (hasError) {
             return (
-                <Suspense fallback={<PageLoader/>}>
+                <Suspense fallback={<PageLoader />}>
                     <ErrorPage />
                 </Suspense>
             );

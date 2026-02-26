@@ -1,16 +1,15 @@
-import { screen } from "@testing-library/react";
-import Sidebar from "./Sidebar";
-import { renderWithTranslation } from "shared/tests";
-
+import { screen } from '@testing-library/react';
+import { renderWithTranslation } from 'shared/tests';
+import Sidebar from './Sidebar';
 
 describe('Sidebar', () => {
     test('should render', () => {
-        renderWithTranslation(<Sidebar/>);
+        renderWithTranslation(<Sidebar />);
         expect(screen.getByTestId('sidebar')).toBeInTheDocument();
     });
 
     test('test toggle', () => {
-        renderWithTranslation(<Sidebar/>);
+        renderWithTranslation(<Sidebar />);
         const toggleBtn = screen.getByTestId('toggle-button');
         expect(toggleBtn).toBeInTheDocument();
         toggleBtn.click();

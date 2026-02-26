@@ -10,10 +10,7 @@ module.exports = {
     globals: {
         __IS_DEV__: 'readonly',
     },
-    extends: [
-        'plugin:react/recommended',
-        'airbnb',
-    ],
+    extends: ['plugin:react/recommended', 'airbnb', 'plugin:storybook/recommended'],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaFeatures: {
@@ -32,8 +29,8 @@ module.exports = {
         },
     },
     rules: {
-        'react/jsx-indent': [2, 4, 6],
-        'react/jsx-indent-props': [2, 4, 6],
+        'react/jsx-indent': ['error', 4],
+        'react/jsx-indent-props': ['error', 4],
         indent: 'off',
         'lines-between-class-members': 'off',
         'react/destructuring-assignment': 'off',
@@ -47,6 +44,7 @@ module.exports = {
                 '**/*.test.{js,jsx,ts,tsx}',
                 '**/*.spec.{js,jsx,ts,tsx}',
                 '**/*.stories.{js,jsx,ts,tsx}',
+                '**/tests/**/*.{js,jsx,ts,tsx}',
             ],
         }],
         'import/prefer-default-export': 'off',
@@ -70,6 +68,13 @@ module.exports = {
             files: ['*.d.ts'],
             rules: {
                 'no-underscore-dangle': 'off',
+            },
+        },
+        {
+            files: ['config/**/*.ts', 'webpack.config.ts', 'jest.config.ts'],
+            rules: {
+                'func-names': 'off',
+                'import/no-extraneous-dependencies': 'off',
             },
         },
     ],
